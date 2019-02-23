@@ -12,3 +12,4 @@ for row in apps_data[1:]:
         non_games_ratings.append(rating)
         
 avg_rating_non_games = sum(non_games_ratings) / len(non_games_ratings)
+print(avg_rating_non_games)
