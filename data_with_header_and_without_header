@@ -1,0 +1,17 @@
+#This code wil print the data without header 
+from csv import reader 
+def opened_dataset(file='applestore.csv' ,encoding="utf-8" ,header = True):
+      
+    opened_file = open(file)
+    
+    read_file = reader(opened_file)
+    data = list(read_file)
+    
+    if header:
+        return data[1:], data[0]
+    else:
+        return data
+apps_data, header = opened_dataset()
+print(header)
+print("")
+print(apps_data)
