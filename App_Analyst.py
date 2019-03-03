@@ -16,3 +16,24 @@ android = list(read_file)
 android_header =android[0]
 android=android[1:]
 print(android)
+
+
+
+
+
+
+# Function to explore both data 
+def explore_data(dataset, start, end, rows_and_columns=False):
+    dataset_slice = dataset[start:end]    
+    for row in dataset_slice:
+        print(row)
+        print('\n') # adds a new (empty) line between rows
+        
+    if rows_and_columns:
+        print('Number of rows:', len(dataset))
+        print('Number of columns:', len(dataset[0]))
+
+print(android_header)
+print('\n')
+explore_data(android, 0, 3, True)
+
