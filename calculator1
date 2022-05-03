@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May  3 08:38:45 2022
+
+@author: kamouzougan
+"""
+
+print("################################")
+print("# Welcome to my calculator app #")    
+print("################################")  
+print("  ")
+print("Please make a Selection")
+print("  ")
+print("+++++++++++++++ Menu ++++++++++++")
+print("1.Addition")
+print("2.Substration")
+print("3.Multiplication")
+print("4.Division") 
+while True:
+  choice = int(input("Please make a selection from the list above"))
+
+  if choice == 1 : 
+     print("your are about to perform an addition")
+     num1 = int(input("Please enter number1"))
+     num2 = int(input("Plese enter number2 "))
+     total = num1 + num2 
+     print("your total for this addition is {}".format(total))
+  elif choice == 2 : 
+     print("your are about to perform an substration")
+     num1 = int(input("Please enter number1"))
+     num2 = int(input("Plese enter number2 "))
+     total = num1 - num2 
+     print("your total for this addition is {}".format(total))
+  elif choice == 3 : 
+     print("your are about to perform multiplication")
+     num1 = int(input("Please enter number1"))
+     num2 = int(input("Plese enter number2 "))
+     total = num1 * num2 
+     print("your total for this addition is {}".format(total))   
+  elif choice == 4 : 
+     print("your are about to perform an division")
+     num1 = int(input("Please enter number1"))
+     num2 = int(input("Plese enter number2 "))
+     total = num1 / num2 
+     print("your total for this addition is {}".format(total))
+   
+     
+  question = input("do you want to continue ?(yes,no")
+  if "yes" in question : 
+    print("you will return to the app")
+  elif 'no' in question:
+      break
+  
+    
+print("Bye thank you for shoping with us\n Have a nice day!")  
+  
+        
